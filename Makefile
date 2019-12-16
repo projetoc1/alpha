@@ -9,7 +9,7 @@ all:
 	git clone https://github.com/itead/Segnix.git
 #	git clone https://github.com/wilsons1978/teste.git
 	#git clone https://github.com/gpogor/teste.git # comentado por Luis
-	git clone https://github.com/projetoc1/NavAux.git # nova versao NavAux
+	git clone https://pr@ojetoc1github.com/projetoc1/NavAux.git # nova versao NavAux
 	sudo cp $(AUX)/Segnix-master/Makefile -r -f $(SEGNIX)/Makefile
 	sudo cp $(AUX)/Segnix-master/lib/c/itead_serial.c -r -f $(SEGNIX)/lib/cpp/itead_serial.c
 	sudo cp $(AUX)/Segnix-master/lib/cpp/itead_serial.cpp -r -f $(SEGNIX)/lib/cpp/itead_serial.cpp
