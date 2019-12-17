@@ -1,6 +1,7 @@
 SEGNIX= ./Segnix
 NAVIOAUX= ./NavioAux
-AUX= ./teste
+#AUX= ./teste #comentado por Luis
+AUX= ./testewilsons
 BOARD= Raspberry_Pi_Model_BPlus
 #BOARD= Raspberry_Pi_Rv2
 all:
@@ -8,7 +9,8 @@ all:
 	git clone https://github.com/emlid/Navio2.git
 	git clone https://github.com/itead/Segnix.git
 #	git clone https://github.com/wilsons1978/teste.git
-	git clone https://github.com/gpogor/teste.git
+###	git clone https://github.com/gpogor/teste.git # comentado por Luis
+	git clone https://github.com/projetoc1/testewilsons # arquivos Segnix-master devem ser copiados
 	sudo cp $(AUX)/Segnix-master/Makefile -r -f $(SEGNIX)/Makefile
 	sudo cp $(AUX)/Segnix-master/lib/c/itead_serial.c -r -f $(SEGNIX)/lib/cpp/itead_serial.c
 	sudo cp $(AUX)/Segnix-master/lib/cpp/itead_serial.cpp -r -f $(SEGNIX)/lib/cpp/itead_serial.cpp
