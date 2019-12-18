@@ -22,9 +22,9 @@ all:
 	sudo cp $(AUX)/Segnix-master/libraries/itead_Nextion/Makefile -r -f $(SEGNIX)/libraries/itead_Nextion/Makefile
 
 	#sudo cp $(AUX)/NavioAux/Backup/config.txt -r -f /boot/config.txt
-	sudo cp $(AUX)/NavioAux -r -f $(NAVIOAUX)
-	sudo cp $(AUX)/main.cpp -r -f main.cpp 
-	sudo cp $(AUX)/Makefile -r -f Makefile 
+	#######sudo cp $(AUX)/NavioAux -r -f $(NAVIOAUX) # comentado por Luis
+	#######sudo cp $(AUX)/main.cpp -r -f main.cpp # comentado por Luis
+	#######sudo cp $(AUX)/Makefile -r -f Makefile # comentado por Luis
 	sudo rm -r $(AUX)
 	sudo chown pi:pi -R *
 	
